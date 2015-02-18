@@ -1,0 +1,172 @@
+{
+  "profiles": [
+    {
+      "name": "Dave Rosen",
+      "nickname": "Omni",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/02/omni-1024x1020.png",
+      "latitude": 57.7973333,
+      "longitude": 12.0502107
+    },
+    {
+      "name": "Ryan Chartrand",
+      "nickname": "Envisioner",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2012/10/envisioner-1024x1024.png",
+      "latitude": 58.8,
+      "longitude": 14.05
+    },
+    {
+      "name": "Jake Foley",
+      "nickname": "Manifestation",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/10/manifestation-1024x1024.png",
+      "latitude": 61.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Brad Giblin",
+      "nickname": "Mecharmor",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/04/mecharmor-1024x1024.png",
+      "latitude": 63.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Josh Johnston",
+      "nickname": "Alchemix",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/02/alchemix-1024x1024.png",
+      "latitude": 65.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Mike Rhoads",
+      "nickname": "Conductor",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/03/conductor-1024x1024.png",
+      "latitude": 67.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Sam Accetta",
+      "nickname": "Sigma",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/02/sigma-1024x1024.png",
+      "latitude": 69.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Alex Almada",
+      "nickname": "Helix",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/08/helix-armorine-1024x1024.png",
+      "latitude": 71.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Bernardo Dias",
+      "nickname": "Hammerizer",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/02/hammerizer-1024x1024.png",
+      "latitude": -23.3977801,
+      "longitude": -45.0054654
+    },
+    {
+      "name": "Luis Fonseca",
+      "nickname": "Animator",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2010/12/animator-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Hugo Ruivo",
+      "nickname": "Hugeoborg",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/05/hugeoborg-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Ricardo Aguiar",
+      "nickname": "Shadow Bug Killer",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/04/shadow-bug-killer-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Paul de",
+      "nickname": "ula – Fusionx1",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/04/fusionx1-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Rubens Mariuzzo",
+      "nickname": "The Source",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/08/the-source-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Kamil Ogórek",
+      "nickname": "BeatShocker",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/07/beatshocker-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Andre Drougge",
+      "nickname": "Fenrir",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/06/fenrir-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Mateusz Śpiewak",
+      "nickname": "Adventourist",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/04/adventourist-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Pratomo Ardianto",
+      "nickname": "Shadow Blaze",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/08/shadow-blaze-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Gerald Villorente",
+      "nickname": "Gulok",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/04/gulok-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Ash White",
+      "nickname": "Timeflyer",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/08/timeflyer-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Juan Combetto",
+      "nickname": "Omniwired",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/06/wired1-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Manuel Silva",
+      "nickname": "Async Surfer",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/03/async-surfer.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Wojtek Zając",
+      "nickname": "Re-Enhancer",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/02/re-enhancer-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    },
+    {
+      "name": "Vio Cojocaru",
+      "nickname": "Channeler",
+      "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2013/02/channeller-1024x1024.png",
+      "latitude": 73.8,
+      "longitude": 16.05
+    }
+  ]
+}
