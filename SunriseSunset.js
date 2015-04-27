@@ -100,8 +100,8 @@ SunriseSunset.prototype = {
         var RA = this.atan(0.91764 * this.tan(L));
         RA %= 360;
 
-        var Lquadrant  = (Math.floor( L/90)) * 90;
-        var RAquadrant = (Math.floor(RA/90)) * 90;
+        var Lquadrant  = (Math.floor( L / 90)) * 90;
+        var RAquadrant = (Math.floor(RA / 90)) * 90;
         RA = RA + (Lquadrant - RAquadrant);
         RA /= 15;
 
@@ -120,8 +120,7 @@ SunriseSunset.prototype = {
     },
 
     localMeanTime: function() {
-        var cosH = (this.cos(this.zenith) - (this.sinDec() * this.sin(this.latitude))) 
-            / (this.cosDec() * this.cos(this.latitude));
+        var cosH = (this.cos(this.zenith) - (this.sinDec() * this.sin(this.latitude))) / (this.cosDec() * this.cos(this.latitude));
 
         if (cosH >  1) {
             return "the sun never rises on this location (on the specified date)";
@@ -138,7 +137,7 @@ SunriseSunset.prototype = {
     },
 
     hoursRange: function( h ) {
-        return (h+24) % 24;
+        return (h + 24) % 24;
     },
 
     UTCTime: function() {
