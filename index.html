@@ -33,7 +33,7 @@
             sunriseSunsetLayer;
 
         function initialize() {
-            var defaultLatLng = new google.maps.LatLng(-62.91386043124999, 28.352475049770295);
+            var defaultLatLng = new google.maps.LatLng(0, 0);
 
             // Options stored, use as default
             if (localStorage.getItem('mapOptions')) {
@@ -61,7 +61,7 @@
                     navigator.geolocation.getCurrentPosition(function(position) {
                         var geolocate = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                         map.setCenter(geolocate);
-                        console.log(geolocate);
+                        map.setZoom(8);
                     });
                 }
             }
