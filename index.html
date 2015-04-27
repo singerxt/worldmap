@@ -24,10 +24,13 @@
 </head>
 <body>
     <div id="map_canvas"></div>
+    <script src="SunriseSunset.js"></script>
+    <script src="SunriseSunsetLayer.js"></script>
     <script>
     (function() {
         var map,
-            mapOptions;
+            mapOptions,
+            sunriseSunsetLayer;
 
         function initialize() {
             var defaultLatLng = new google.maps.LatLng(-62.91386043124999, 28.352475049770295);
@@ -44,9 +47,15 @@
                 };
             }
 
+            // Initialize Map
             map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
-            // Nothing stored, center the map using HTML5 geolocation
+            // Sunrise Sunset layer
+            sunriseSunsetLayer = new SunriseSunsetLayer(map, 'GOOGLE');
+            sunriseSunsetLayer.autoUpdate = true;
+            sunriseSunsetLayer.draw();
+
+            // If nothing stored, center the map using HTML5 geolocation
             if (!localStorage.getItem('mapOptions')) {
                 if (!!navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function(position) {
@@ -57,14 +66,13 @@
                 }
             }
 
+            // Google Maps event listeners 
             google.maps.event.addListener(map, 'center_changed', function() {
                 storeState(map);
             });
-         
             google.maps.event.addListener(map, 'zoom_changed', function() {
                 storeState(map);
             });
-         
             google.maps.event.addListener(map, 'maptypeid_changed', function() {
                 storeState(map);
             });
