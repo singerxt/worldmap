@@ -1,0 +1,324 @@
+<!--
+/* inline-docs:ignore */
+--><!DOCTYPE html>
+<html>
+  <!--
+  /*
+
+  Html template
+  ====
+
+  This template is used when rendering docs to html, to wrap the markdown inside an html document.
+
+  */
+  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <style type="text/css">
+     /*
+
+        Default styles
+        ----
+
+        All of the default styles are embedded in the template, to avoid extra http requests and make
+        distribution easier.
+
+      */
+     body {
+       font-family: Arial;
+       line-height: 1.5;
+     }
+
+     h1,h2,h3,h4,h5,h6 {
+       font-family: Serif;
+     }
+
+     h1 {
+       font-size: 30px;
+     }
+
+     h2 {
+       font-size: 20px;
+       margin-top: 40px;
+     }
+
+     h3 {
+       font-size: 16px;
+     }
+
+     h1 a,
+     h2 a {
+       color: #000;
+       text-decoration: none;
+     }
+
+     h1 a:hover:after,
+     h2 a:hover:after {
+       content: ' #';
+       color: #999;
+     }
+
+     section {
+       width: 800px;
+       max-width: 100%;
+       margin: 0 auto;
+       border-bottom: 5px solid #000;
+       padding-bottom: 50px;
+     }
+
+     blockquote {
+       font-style: italic;
+       border-left: 10px solid #EEE;
+       padding: 10px 0 10px 40px;
+       margin: 0;
+     }
+
+      pre {
+          /*> code blocks longer than section max width will scroll */
+          overflow-x: auto;
+          padding: 1em;
+          background: #eee;
+          border-radius: 5px;
+      }
+
+      code {
+          line-height: 1.7;
+          background: #eee;
+          padding: 0.2em;
+          border-radius: 3px;
+      }
+
+     .source-ref {
+       padding: 0 0 10px 0;
+       font-size: 12px;
+       font-style: italic;
+       color: #999;
+     }
+
+     .source-ref a {
+       color: #999;
+       text-decoration: none;
+     }
+
+     .source-ref a:hover {
+       text-decoration: underline;
+     }
+
+     #table-of-contents {
+       float: right;
+       width: 40%;
+       min-width: 220px;
+       background: #efefef;
+       font-size: 0.8em;
+       padding: 1em 2em 1em 3em;
+       margin: 0 0 0.5em 0.5em;
+     }
+
+     #table-of-contents ul {
+       padding: 0;
+     }
+
+     #table-of-contents ul ul {
+       padding: 0 0 0 1em;
+     }
+
+     #table-of-contents li {
+       margin: 0 0 0.25em 0;
+     }
+
+     #table-of-contents a {
+       text-decoration: none;
+     }
+
+     #table-of-contents a:hover,
+     #table-of-contents a:active {
+       text-decoration: underline;
+     }
+
+     h1:target {
+       animation: highlight 1s ease;
+     }
+
+     @keyframes highlight {
+       from { background: yellow; }
+       to { background: white; }
+     }
+
+     @media (max-width: 1000px) {
+       body {
+         padding: 0 1em;
+         font-size: 1.2em;
+       }
+
+       #table-of-contents {
+         width: auto;
+         float: none;
+         font-size: 1em;
+         margin-left: 0;
+       }
+
+       #table-of-contents li {
+         margin: 0.6em 0;
+       }
+     }
+    </style>
+  </head>
+  <body>
+    <section data-filename="/README.md">
+<article data-line="0">
+<h1 id="x-world-map-prototype">X World Map prototype</h1><ul>
+<li>Preview: <a href="http://bernardodiasc.github.io/gmaps">bernardodiasc.github.io/gmaps</a></li>
+<li>Documentation: <a href="http://bernardodiasc.github.io/gmaps/docs.html">bernardodiasc.github.io/gmaps/docs.html</a></li>
+</ul>
+<h2 id="x-world-map-prototype:description">Description</h2><p>This prototype uses <a href="https://developers.google.com/maps/documentation/javascript/tutorial">Google Maps JavaScript API v3</a> and have the following features:</p>
+<ul>
+<li>Enabling HTML5 Geolocation in your browser will center the map in your location;</li>
+<li>State of map center, zoom and type are stored in HTML5 localStorage and will be the deafult state in the next page load;</li>
+<li>Real time day and night overlay drawn on map;</li>
+</ul>
+<p>Thanks <a href="http://x-team.com/x-labs">x-team.com/x-labs</a></p>
+<p>/five</p>
+
+<div class="source-ref">Source: <a href="./README.md#L0">/README.md, line 0</a></div></article>
+</section>
+<section data-filename="/resources.md">
+<article data-line="0">
+<h1 id="external-resources">External resources</h1><p>Few good links that can be helpful to learn more about subjects covered in this prototype.</p>
+<h2 id="external-resources:google-maps">Google Maps</h2><ul>
+<li><a href="https://developers.google.com/maps/documentation">developers.google.com/maps/documentation</a></li>
+<li><a href="http://www.morethanamap.com/demos">www.morethanamap.com/demos</a></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/reference">developers.google.com/maps/documentation/javascript/reference</a></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/examples">developers.google.com/maps/documentation/javascript/examples</a></li>
+<li><a href="http://www.slideshare.net/aemkei/google-maps-api-devfest-karlsruhe">www.slideshare.net/aemkei/google-maps-api-devfest-karlsruhe</a></li>
+</ul>
+<h3 id="undefined">Day and Night overlay</h3><ul>
+<li><a href="http://blog.char95.com/daylight-on-google-maps">blog.char95.com/daylight-on-google-maps</a> (origin of SunriseSunset.js feature)</li>
+<li><a href="http://gis.stackexchange.com/questions/7546/drawing-day-and-night-on-a-google-map">gis.stackexchange.com/questions/7546/drawing-day-and-night-on-a-google-map</a></li>
+<li><a href="http://js-tutorial.com/day-night-overlay-357">js-tutorial.com/day-night-overlay-357</a></li>
+<li><a href="http://stackoverflow.com/questions/7100718/calculating-an-overlay-of-day-night-for-google-maps">stackoverflow.com/questions/7100718/calculating-an-overlay-of-day-night-for-google-maps</a></li>
+</ul>
+<h3 id="undefined">Timezones (not yet in this prototype)</h3><ul>
+<li><a href="https://developers.google.com/maps/documentation/timezone">developers.google.com/maps/documentation/timezone</a></li>
+<li><a href="http://science.opposingviews.com/google-maps-include-time-zone-changes-23127.html">science.opposingviews.com/google-maps-include-time-zone-changes-23127.html</a></li>
+<li><a href="https://github.com/dbaron/timezone-map">github.com/dbaron/timezone-map</a></li>
+</ul>
+<h2 id="external-resources:html5">HTML5</h2><ul>
+<li><a href="http://www.w3.org/TR/html5">www.w3.org/TR/html5</a></li>
+<li><a href="http://www.w3.org/TR/html51">www.w3.org/TR/html51</a></li>
+<li><a href="http://html5please.com">html5please.com</a></li>
+<li><a href="https://html.spec.whatwg.org">html.spec.whatwg.org</a></li>
+<li><a href="https://platform.html5.org">platform.html5.org</a></li>
+<li><a href="http://www.html5rocks.com">www.html5rocks.com</a></li>
+<li><a href="http://playground.html5rocks.com">playground.html5rocks.com</a></li>
+<li><a href="http://html5doctor.com">html5doctor.com</a></li>
+<li><a href="http://diveintohtml5.info">diveintohtml5.info</a></li>
+<li><a href="http://html5index.org">html5index.org</a></li>
+</ul>
+<p>Extra:</p>
+<ul>
+<li><a href="http://www.html5rocks.com/en/features/nuts_and_bolts">www.html5rocks.com/en/features/nuts_and_bolts</a></li>
+</ul>
+<h3 id="undefined">Storage</h3><ul>
+<li><a href="http://www.w3schools.com/html/html5_webstorage.asp">www.w3schools.com/html/html5_webstorage.asp</a></li>
+<li><a href="http://diveintohtml5.info/storage.html">diveintohtml5.info/storage.html</a></li>
+<li><a href="http://html5doctor.com/storing-data-the-simple-html5-way-and-a-few-tricks-you-might-not-have-known">html5doctor.com/storing-data-the-simple-html5-way-and-a-few-tricks-you-might-not-have-known</a></li>
+</ul>
+<h3 id="undefined">Geolocation</h3><ul>
+<li><a href="http://www.w3schools.com/html/html5_geolocation.asp">www.w3schools.com/html/html5_geolocation.asp</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation">developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation</a></li>
+</ul>
+<h2 id="external-resources:mixed-tech-google-maps-html5-">Mixed Tech (Google Maps + HTML5)</h2><ul>
+<li><a href="http://toddmotto.com/using-html5-geolocation-to-show-current-location-with-google-maps-api">toddmotto.com/using-html5-geolocation-to-show-current-location-with-google-maps-api</a></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/examples/map-geolocation">developers.google.com/maps/documentation/javascript/examples/map-geolocation</a></li>
+</ul>
+
+<div class="source-ref">Source: <a href="./resources.md#L0">/resources.md, line 0</a></div></article>
+</section>
+<section data-filename="/initializeMap.js">
+<article data-line="1">
+<h1 id="build-map-script">Build Map Script</h1><p>In this File the map is being initilized and in the DOM will replace the <code>&lt;div id=&quot;mapcanvas&quot; class=&quot;mapcanvas&quot;&gt;</code>.</p>
+<p>As convention, the ID of the element is used in script while the class is used for styling.</p>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L1">/initializeMap.js, line 1</a></div></article>
+<article data-line="15">
+<blockquote>
+<p>Default map options</p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L15">/initializeMap.js, line 15</a></div></article>
+<article data-line="23">
+<blockquote>
+<p>If have map options in storage, use it as default</p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L23">/initializeMap.js, line 23</a></div></article>
+<article data-line="25">
+<blockquote>
+<p>Parse the serialized string into an array, and refresh the center position value </p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L25">/initializeMap.js, line 25</a></div></article>
+<article data-line="30">
+<blockquote>
+<p>Initialize Map on element with ID <code>mapcanvas</code></p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L30">/initializeMap.js, line 30</a></div></article>
+<article data-line="33">
+<blockquote>
+<p>Sunrise Sunset feature, turn on auto update and draw the overlay in the map</p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L33">/initializeMap.js, line 33</a></div></article>
+<article data-line="38">
+<blockquote>
+<p>If nothing stored, center the map using HTML5 geolocation</p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L38">/initializeMap.js, line 38</a></div></article>
+<article data-line="49">
+<blockquote>
+<p>Google Maps event listener <code>center_changed</code></p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L49">/initializeMap.js, line 49</a></div></article>
+<article data-line="54">
+<blockquote>
+<p>Google Maps event listener <code>zoom_changed</code></p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L54">/initializeMap.js, line 54</a></div></article>
+<article data-line="59">
+<blockquote>
+<p>Google Maps event listener <code>maptypeid_changed</code></p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L59">/initializeMap.js, line 59</a></div></article>
+<article data-line="65">
+<h2 id="build-map-script:storage-state">Storage State</h2><p>Store the <code>mapOptions</code> key with the current map state in the localStorage</p>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L65">/initializeMap.js, line 65</a></div></article>
+<article data-line="72">
+<blockquote>
+<p>Get current state of zoom, mapTypeId and center</p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L72">/initializeMap.js, line 72</a></div></article>
+<article data-line="79">
+<blockquote>
+<p>Since the localStorage only accepts string as the value,
+serialize the <code>mapOptions</code> array into a string </p>
+</blockquote>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L79">/initializeMap.js, line 79</a></div></article>
+<article data-line="85">
+<h2 id="build-map-script:initialization">Initialization</h2><p>Initialize Map on window load.</p>
+
+<div class="source-ref">Source: <a href="./initializeMap.js#L85">/initializeMap.js, line 85</a></div></article>
+</section>
+
+
+    <script src="template/default.js"></script>
+  </body>
+</html>
