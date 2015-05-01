@@ -31,9 +31,9 @@ As convention, the ID of the element is used in script while the class is used f
         map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
         
         // > Sunrise Sunset feature, turn on auto update and draw the overlay in the map
-        sunriseSunsetLayer = new SunriseSunsetLayer(map, 'GOOGLE');
-        sunriseSunsetLayer.autoUpdate = true;
-        sunriseSunsetLayer.draw();
+        //sunriseSunsetLayer = new SunriseSunsetLayer(map, 'GOOGLE');
+        //sunriseSunsetLayer.autoUpdate = true;
+        //sunriseSunsetLayer.draw();
         
         // > If nothing stored, center the map using HTML5 geolocation
         if (!localStorage.getItem('mapOptions')) {
@@ -61,9 +61,13 @@ As convention, the ID of the element is used in script while the class is used f
             storeState(map);
         });
 
-        // DRAW GIANT X ON EARTH! MUAHAHA ;)
-        map.data.loadGeoJson('datalayer.json');
-        map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
+        // DRAW GIANT X ON EARTH! MUAHAHA :)
+        //map.data.loadGeoJson('big-x.json');
+        //map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
+        
+        // Place profiles markers
+        map.data.loadGeoJson('json/profiles.json');
+        console.log(map.data);
     }
 
     /*
