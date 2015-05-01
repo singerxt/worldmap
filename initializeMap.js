@@ -60,6 +60,10 @@ As convention, the ID of the element is used in script while the class is used f
         google.maps.event.addListener(map, 'maptypeid_changed', function() {
             storeState(map);
         });
+
+        // DRAW GIANT X ON EARTH! MUAHAHA ;)
+        map.data.loadGeoJson('datalayer.json');
+        map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
     }
 
     /*
