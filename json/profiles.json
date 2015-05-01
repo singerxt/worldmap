@@ -2,13 +2,16 @@
   "type": "FeatureCollection",
   "features": [
     {
+      "properties": {
+        "name": "Bernardo Dias",
+        "description": "The Hammerizer",
+        "avatar": "img/hammerizer-1024x1024.png",
+        "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
+      },
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [-45, -23.5]
-      },
-      "properties": {
-        "avatar": "http://s3-us-west-2.amazonaws.com/heroized/wp-content/uploads/2014/02/hammerizer-1024x1024.png"
       }
     }
   ]
