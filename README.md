@@ -1,7 +1,7 @@
 # X World Map prototype
 
-- Preview: [bernardodiasc.github.io/gmaps](http://bernardodiasc.github.io/gmaps)
-- Documentation: [bernardodiasc.github.io/gmaps/docs.html](http://bernardodiasc.github.io/gmaps/docs.html)
+- Preview: [bernardodiasc.github.io/worldmap/](http://bernardodiasc.github.io/worldmap/)
+- Documentation: [bernardodiasc.github.io/worldmap/docs.html](http://bernardodiasc.github.io/worldmap/docs.html)
 
 ## Description
 
