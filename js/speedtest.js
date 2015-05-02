@@ -25,7 +25,10 @@ speedTest.init = function() {
     'mapTypeId': google.maps.MapTypeId.ROADMAP
   };
 
-  speedTest.map = new google.maps.Map($('mapcanvas'), options);
+  /* Tracker */
+  console.log({file: "speedtest.js", line: 31, desc: "speedTest.map = map;", map: map});
+  
+  speedTest.map = map;
   speedTest.pics = data.photos;
   
   var useGmm = document.getElementById('usegmm');

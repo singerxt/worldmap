@@ -6,7 +6,6 @@ In this File the map is being initilized and in the DOM will replace the `<div i
 As convention, the ID of the element is used in script while the class is used for styling.
 */
 
-(function() {
     var map,
         mc,
         mapOptions,
@@ -65,22 +64,63 @@ As convention, the ID of the element is used in script while the class is used f
         // DRAW GIANT X ON EARTH! MUAHAHA :)
         //map.data.loadGeoJson('big-x.json');
         //map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
+        var markerClusterer = null;
+        var markers = [];
         
-        // Place profiles markers
-        map.data.loadGeoJson('json/profiles.json');
-        map.data.setStyle(function(feature) {
-            return {
-                icon: {
-                    url: 'img/x-640x640.png',
-                    size: new google.maps.Size(52, 52),
-                    scaledSize: new google.maps.Size(52, 52)
-                }
-            };
-        });
-        console.log(map.data);
+        function refreshMap() {
+            if (markerClusterer) {
+                markerClusterer.clearMarkers();
+            }
+     
+            for (var i = 0; i < profiles.features.length; i++) {
+                var feature = profiles.features[i];
+                var latLng = new google.maps.LatLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]);
+                var marker = new google.maps.Marker({
+                    position: latLng,
+                    icon: {
+                        url: feature.properties.avatar,
+                        size: new google.maps.Size(52, 52),
+                        scaledSize: new google.maps.Size(52, 52)
+                    }
+                });
+                markers.push(marker);
+            }
 
-        //var mcOptions = {gridSize: 50, maxZoom: 15};
-        //var mc = new MarkerClusterer(map, [], mcOptions);
+            var zoom = parseInt(document.getElementById('zoom').value, 10);
+            var size = parseInt(document.getElementById('size').value, 10);
+            var style = parseInt(document.getElementById('style').value, 10);
+            zoom = zoom === -1 ? null : zoom;
+            size = size === -1 ? null : size;
+            style = style === -1 ? null: style;
+                console.log(markers);
+
+            markerClusterer = new MarkerClusterer(map, markers, {
+                styles: [{
+                        url: 'img/x-52x52.png',
+                        width: 52,
+                        height: 52,
+                        textSize: 12,
+                        textColor: '#ffffff'
+                    }]
+            });
+        }
+
+        setTimeout(function() {
+            refreshMap();
+        }, 500);
+
+        function clearClusters(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          markerClusterer.clearMarkers();
+        }
+
+        var refresh = document.getElementById('refresh');
+        google.maps.event.addDomListener(refresh, 'click', refreshMap);
+
+        var clear = document.getElementById('clear');
+        google.maps.event.addDomListener(clear, 'click', clearClusters);
+
     }
 
     /*
@@ -109,4 +149,3 @@ As convention, the ID of the element is used in script while the class is used f
     Initialize Map on window load.
     */
     google.maps.event.addDomListener(window, 'load', initialize);      
-})();

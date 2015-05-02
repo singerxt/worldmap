@@ -156,7 +156,7 @@ function MarkerClusterer(map, opt_markers, opt_options) {
    * @type {number}
    * @private
    */
-  this.prevZoom_ = this.map_.getZoom();
+  //this.prevZoom_ = this.map_.getZoom();
 
   // Add the map event listeners
   var that = this;

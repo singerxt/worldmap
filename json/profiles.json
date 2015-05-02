@@ -1,11 +1,11 @@
-{
+var profiles = {
   "type": "FeatureCollection",
   "features": [
     {
       "properties": {
         "name": "Bernardo Dias",
         "description": "The Hammerizer",
-        "avatar": "img/hammerizer-1024x1024.png",
+        "avatar": "img/hammerizer-52x52.png",
         "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
       },
       "type": "Feature",
@@ -18,7 +18,7 @@
       "properties": {
         "name": "Bernardo Dias",
         "description": "The Hammerizer",
-        "avatar": "img/hammerizer-1024x1024.png",
+        "avatar": "img/hammerizer-52x52.png",
         "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
       },
       "type": "Feature",
@@ -31,7 +31,7 @@
       "properties": {
         "name": "Bernardo Dias",
         "description": "The Hammerizer",
-        "avatar": "img/hammerizer-1024x1024.png",
+        "avatar": "img/hammerizer-52x52.png",
         "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
       },
       "type": "Feature",
@@ -44,13 +44,39 @@
       "properties": {
         "name": "Bernardo Dias",
         "description": "The Hammerizer",
-        "avatar": "img/hammerizer-1024x1024.png",
+        "avatar": "img/hammerizer-52x52.png",
         "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
       },
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [-45, -23]
+      }
+    },
+    {
+      "properties": {
+        "name": "Bernardo Dias",
+        "description": "The Hammerizer",
+        "avatar": "img/hammerizer-52x52.png",
+        "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
+      },
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-41, -23]
+      }
+    },
+    {
+      "properties": {
+        "name": "Bernardo Dias",
+        "description": "The Hammerizer",
+        "avatar": "img/hammerizer-52x52.png",
+        "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
+      },
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42, -23]
       }
     }
   ]
