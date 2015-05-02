@@ -64,6 +64,8 @@ As convention, the ID of the element is used in script while the class is used f
         // DRAW GIANT X ON EARTH! MUAHAHA :)
         //map.data.loadGeoJson('big-x.json');
         //map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
+
+        // Markers and Clusters
         var markerClusterer = null;
         var markers = [];
         
@@ -86,41 +88,22 @@ As convention, the ID of the element is used in script while the class is used f
                 markers.push(marker);
             }
 
-            var zoom = parseInt(document.getElementById('zoom').value, 10);
-            var size = parseInt(document.getElementById('size').value, 10);
-            var style = parseInt(document.getElementById('style').value, 10);
-            zoom = zoom === -1 ? null : zoom;
-            size = size === -1 ? null : size;
-            style = style === -1 ? null: style;
-                console.log(markers);
-
             markerClusterer = new MarkerClusterer(map, markers, {
-                styles: [{
+                styles: [
+                    {
                         url: 'img/x-52x52.png',
                         width: 52,
                         height: 52,
                         textSize: 12,
                         textColor: '#ffffff'
-                    }]
+                    }
+                ]
             });
         }
 
         setTimeout(function() {
             refreshMap();
         }, 500);
-
-        function clearClusters(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          markerClusterer.clearMarkers();
-        }
-
-        var refresh = document.getElementById('refresh');
-        google.maps.event.addDomListener(refresh, 'click', refreshMap);
-
-        var clear = document.getElementById('clear');
-        google.maps.event.addDomListener(clear, 'click', clearClusters);
-
     }
 
     /*
