@@ -8,6 +8,7 @@ As convention, the ID of the element is used in script while the class is used f
 
 (function() {
     var map,
+        mc,
         mapOptions,
         sunriseSunsetLayer;
 
@@ -29,7 +30,7 @@ As convention, the ID of the element is used in script while the class is used f
         
         // > Initialize Map on element with ID `mapcanvas`
         map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
-        
+
         // > Sunrise Sunset feature, turn on auto update and draw the overlay in the map
         sunriseSunsetLayer = new SunriseSunsetLayer(map, 'GOOGLE');
         sunriseSunsetLayer.autoUpdate = true;
@@ -77,6 +78,9 @@ As convention, the ID of the element is used in script while the class is used f
             };
         });
         console.log(map.data);
+
+        //var mcOptions = {gridSize: 50, maxZoom: 15};
+        //var mc = new MarkerClusterer(map, [], mcOptions);
     }
 
     /*
