@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>X World Map</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/panels.css">
   <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
   <script src="json/profiles.json"></script>
   <script src="js/markerclusterer.js"></script>
@@ -15,17 +16,32 @@
 <body>
 <body>
   <div class="panels">
-    <div class="panel top">
+    <div class="panel top" data-layout="panels-top">
       <h1>World Map</h1>
+      <input type="text" class="search" placeholder="search">
     </div>
     <button class="control top js-panels" data-layout="panels-top"></button>
 
-    <div class="panel map">
+    <div class="panel map js-panel-map">
       <div id="mapcanvas" class="mapcanvas"></div>
     </div>
 
     <div class="panel side">
       <h2>Side Panel</h2>
+      <button>toggle day/night overlay</button>
+      <button>toggle X overlay</button>
+      <hr>
+      <p>members</p>
+      <label>
+        <input type="checkbox"> Check all
+      </label>
+      <br>
+      <select multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
     </div>
     <button class="control side js-panels" data-layout="panels-two-thirds"></button>
   </div>
@@ -33,13 +49,30 @@
 <script>
 
 var html = document.querySelector("html"),
-    buttons = document.getElementsByTagName("button");
+    buttons = document.getElementsByClassName("js-panels");
+
 
 [].forEach.call(buttons, function (button) {
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function(event) {
+    event.stopPropagation();
     html.classList.toggle(button.dataset['layout']);
+    localStorage.setItem('panels', html.classList.toString());
   });
 });
+
+
+/* http://html5doctor.com/the-classlist-api/ */
+DOMTokenList.prototype.addmany = function(classes) {
+    var classes = classes.split(' '),
+        i = 0,
+        ii = classes.length;
+
+    for(i; i<ii; i++) {
+        this.add(classes[i]);
+    }
+}
+
+html.classList.addmany(localStorage.getItem('panels'));
 
 </script>
 </body>
