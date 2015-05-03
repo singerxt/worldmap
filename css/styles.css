@@ -15,3 +15,100 @@ body,
   margin: 0;
   width: 100%;
 }
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.panel,
+.control {
+  position: absolute;
+  transition: all 0.1s;
+  overflow: hidden;
+}
+
+.control {
+  border: 0;
+  outline: none;
+  padding: 0;
+  background: #888;
+}
+
+.panel.map {
+  z-index: 1;
+  left: 0;
+  top: 2%;
+  width: 98%;
+  height: 98%;
+}
+
+.panel.top {
+  z-index: 3;
+  background: #aaa;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+}
+
+.control.top {
+  display: block;
+  z-index: 4;
+  cursor: n-resize;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2%;
+}
+
+.panel.side {
+  z-index: 2;
+  background: #aaa;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.control.side {
+  display: block;
+  z-index: 3;
+  cursor: e-resize;
+  right: 0;
+  top: 0;
+  width: 2%;
+  height: 100%;
+}
+
+html.panels-top .panel.top {
+  height: 10%;
+}
+
+html.panels-top .panel.side,
+html.panels-top .control.side,
+html.panels-top .panel.map {
+  top: 12%;
+  height: 88%;
+}
+
+html.panels-top .control.top {
+  top: 10%;
+  height: 2%;
+}
+
+html.panels-two-thirds .panel.map {
+  width: 65%;
+}
+
+html.panels-two-thirds .panel.side {
+  width: 32%;
+}
+
+html.panels-two-thirds .control.side {
+  right: 32%;
+  width: 3%;
+}

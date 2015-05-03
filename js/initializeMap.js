@@ -19,14 +19,14 @@ As convention, the ID of the element is used in script while the class is used f
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 center: defaultLatLng
             };
-        
+
         // > If have map options in storage, use it as default
         if (localStorage.getItem('mapOptions')) {
-            // > Parse the serialized string into an array, and refresh the center position value 
+            // > Parse the serialized string into an array, and refresh the center position value
             mapOptions = JSON.parse(localStorage.getItem('mapOptions'));
             mapOptions.center = new google.maps.LatLng(mapOptions.center[0], mapOptions.center[1]);
         }
-        
+
         // > Initialize Map on element with ID `mapcanvas`
         map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
 
@@ -34,7 +34,7 @@ As convention, the ID of the element is used in script while the class is used f
         sunriseSunsetLayer = new SunriseSunsetLayer(map, 'GOOGLE');
         sunriseSunsetLayer.autoUpdate = true;
         sunriseSunsetLayer.draw();
-        
+
         // > If nothing stored, center the map using HTML5 geolocation
         if (!localStorage.getItem('mapOptions')) {
             if (!!navigator.geolocation) {
@@ -45,17 +45,17 @@ As convention, the ID of the element is used in script while the class is used f
                 });
             }
         }
-        
+
         // > Google Maps event listener `center_changed`
         google.maps.event.addListener(map, 'center_changed', function() {
             storeState(map);
         });
-        
+
         // > Google Maps event listener `zoom_changed`
         google.maps.event.addListener(map, 'zoom_changed', function() {
             storeState(map);
         });
-        
+
         // > Google Maps event listener `maptypeid_changed`
         google.maps.event.addListener(map, 'maptypeid_changed', function() {
             storeState(map);
@@ -68,12 +68,12 @@ As convention, the ID of the element is used in script while the class is used f
         // Markers and Clusters
         var markerClusterer = null;
         var markers = [];
-        
+
         function refreshMap() {
             if (markerClusterer) {
                 markerClusterer.clearMarkers();
             }
-     
+
             for (var i = 0; i < profiles.features.length; i++) {
                 var feature = profiles.features[i];
                 var latLng = new google.maps.LatLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]);
@@ -121,14 +121,14 @@ As convention, the ID of the element is used in script while the class is used f
             };
 
             // > Since the localStorage only accepts string as the value,
-            // > serialize the `mapOptions` array into a string 
+            // > serialize the `mapOptions` array into a string
             localStorage.setItem('mapOptions', JSON.stringify(mapOptions));
         }
     }
-    
+
     /*
     ## Initialization
 
     Initialize Map on window load.
     */
-    google.maps.event.addDomListener(window, 'load', initialize);      
+    google.maps.event.addDomListener(window, 'load', initialize);

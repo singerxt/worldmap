@@ -13,6 +13,34 @@
   <script src="js/initializeMap.js"></script>
 </head>
 <body>
-  <div id="mapcanvas" class="mapcanvas"></div>
+<body>
+  <div class="panels">
+    <div class="panel top">
+      <h1>World Map</h1>
+    </div>
+    <button class="control top js-panels" data-layout="panels-top"></button>
+
+    <div class="panel map">
+      <div id="mapcanvas" class="mapcanvas"></div>
+    </div>
+
+    <div class="panel side">
+      <h2>Side Panel</h2>
+    </div>
+    <button class="control side js-panels" data-layout="panels-two-thirds"></button>
+  </div>
+
+<script>
+
+var html = document.querySelector("html"),
+    buttons = document.getElementsByTagName("button");
+
+[].forEach.call(buttons, function (button) {
+  button.addEventListener('click', function() {
+    html.classList.toggle(button.dataset['layout']);
+  });
+});
+
+</script>
 </body>
 </html>
