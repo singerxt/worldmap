@@ -61,9 +61,9 @@ As convention, the ID of the element is used in script while the class is used f
       storeState(map);
     });
 
-    // DRAW GIANT X ON EARTH! MUAHAHA :)
-    //map.data.loadGeoJson('json/big-x.json');
-    //map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
+    // FEATURES!
+    map.data.loadGeoJson('json/features.json');
+    map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
 
     // Markers and Clusters
     var markerClusterer = null;
@@ -101,9 +101,9 @@ As convention, the ID of the element is used in script while the class is used f
       });
     }
 
-    setTimeout(function() {
+    /*setTimeout(function() {
       refreshMap();
-    }, 500);
+    }, 500);*/
   }
 
   /*

@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-115, 60],
+            [-50, 80],
+            [95, 0],
+            [-50, -80],
+            [-115, -60],
+            [-35, 0],
+            [-115, 60]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [105, 80],
+            [170, 60],
+            [105, 10],
+            [40, 60],
+            [105, 80]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [105, -80],
+            [170, -60],
+            [105, -10],
+            [40, -60],
+            [105, -80]
+          ]
+        ]
+      }
+    },
+    {
+      "properties": {
+        "name": "Bernardo Dias",
+        "description": "The Hammerizer",
+        "avatar": "img/hammerizer-52x52.png",
+        "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
+      },
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-45, -23.5]
+      }
+    }
+  ]
+}
+
+

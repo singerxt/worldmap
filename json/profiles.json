@@ -13,6 +13,19 @@ var profiles = {
         "type": "Point",
         "coordinates": [-45, -23.5]
       }
+    },
+    {
+      "properties": {
+        "name": "Bernardo Dias",
+        "description": "The Hammerizer",
+        "avatar": "img/hammerizer-52x52.png",
+        "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
+      },
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-55, -33.5]
+      }
     }
   ]
 }
