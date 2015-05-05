@@ -73,6 +73,19 @@
         "type": "Point",
         "coordinates": [-49.2790834,-16.68427]
       }
+    },
+    {
+      "properties": {
+        "name": "Jedrzej Kurylo",
+        "description": "Warsaw / Poland",
+        "avatar": "",
+        "stuff": ""
+      },
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.232938,21.0611941]
+      }
     }
   ]
 }
