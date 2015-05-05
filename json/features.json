@@ -84,7 +84,7 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [52.232938,21.0611941]
+        "coordinates": [21.0611941,52.232938]
       }
     }
   ]
