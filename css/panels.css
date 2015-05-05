@@ -25,9 +25,9 @@ html, body {
 .panel.map {
   z-index: 1;
   left: 0;
-  top: 2%;
-  width: 98%;
-  height: 98%;
+  top: 20px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
 }
 
 .panel.top {
@@ -46,7 +46,7 @@ html, body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 2%;
+  height: 20px;
 }
 
 .panel.side {
@@ -64,23 +64,23 @@ html, body {
   cursor: e-resize;
   right: 0;
   top: 0;
-  width: 2%;
+  width: 20px;
   height: 100%;
 }
 
 html.panels-top .panel.top {
-  height: 10%;
+  height: 150px;
 }
 
 html.panels-top .panel.side,
 html.panels-top .control.side,
 html.panels-top .panel.map {
-  top: 11.95%;
-  height: 88%;
+  top: 170px;
+  height: calc(100% - 170px);
 }
 
 html.panels-top .control.top {
-  top: 10%;
+  top: 150px;
 }
 
 html.panels-two-thirds .panel.map {
@@ -88,7 +88,7 @@ html.panels-two-thirds .panel.map {
 }
 
 html.panels-two-thirds .panel.side {
-  width: 32%;
+  width: calc(32% - 20px);
 }
 
 html.panels-two-thirds .control.side {

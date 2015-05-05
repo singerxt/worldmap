@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../js/react-0.13.2/build/react.js"></script>
+    <script src="../js/react-0.13.2/build/JSXTransformer.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/panels.css">
+  <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="../json/profiles.json"></script>
+  <script src="../js/markerclusterer.js"></script>
+  <script src="../js/SunriseSunset.js"></script>
+  <script src="../js/SunriseSunsetLayer.js"></script>
+  <script src="../js/initializeMap.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/jsx">
+      var panels = ['top', 'map', 'side'];
+
+      var Header = React.createClass({
+        render: function() {
+          return (
+            <header>
+              <h1>World Map</h1>
+              <input type="text" className="search" placeholder="search"/>
+            </header>
+          );
+        }
+      });
+
+      var Map = React.createClass({
+        render: function() {
+          return (
+            <article>
+              <div id="mapcanvas" className="mapcanvas"></div>
+            </article>
+          );
+        }
+      });
+
+      var Side = React.createClass({
+        render: function() {
+          return (
+            <aside>
+              <h2>Side Panel</h2>
+              <button>toggle day night overlay</button>
+              <button>toggle X overlay</button>
+              <hr/>
+              <p>members</p>
+              <label>
+                <input type="checkbox"/> Check all
+              </label>
+              <br/>
+              <select multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+            </aside>
+          );
+        }
+      });
+
+      var Panels = React.createClass({
+        render: function() {
+          return (
+            <div className="panels">
+              <div className="panel top">
+                <Header />
+              </div>
+              <button className="control top"></button>
+              <div className="panel map">
+                <Map />
+              </div>
+              <div className="panel side">
+                <Side />
+              </div>
+              <button className="control side"></button>
+            </div>
+          );
+        }
+      });
+
+      React.render(
+        <Panels />,
+        document.getElementById('example')
+      );
+    </script>
+  </body>
+</html>
+
+<!--
+
+    <div class="panel top" data-layout="panels-top">
+    </div>
+    <button class="control top js-panels" data-layout="panels-top"></button>
+
+    <div class="panel map js-panel-map">
+      <div id="mapcanvas" class="mapcanvas"></div>
+    </div>
+
+    <div class="panel side">
+      <h2>Side Panel</h2>
+      <button>toggle day/night overlay</button>
+      <button>toggle X overlay</button>
+      <hr>
+      <p>members</p>
+      <label>
+        <input type="checkbox"> Check all
+      </label>
+      <br>
+      <select multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+    <button class="control side js-panels" data-layout="panels-two-thirds"></button>
+
+ -->

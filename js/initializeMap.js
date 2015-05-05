@@ -61,9 +61,15 @@ As convention, the ID of the element is used in script while the class is used f
       storeState(map);
     });
 
+    // > Google Maps event listener `click`
+    // > Note: map click wont work below overlays
+    google.maps.event.addListener(map, 'click', function() {
+      console.log([map.getCenter().lat(), map.getCenter().lng()]);
+    });
+
     // FEATURES!
-    map.data.loadGeoJson('json/features.json');
-    map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
+    //map.data.loadGeoJson('json/features.json');
+    //map.data.setStyle({ fillColor: 'red', strokeColor: 'red' });
 
     // Markers and Clusters
     var markerClusterer = null;
@@ -101,9 +107,9 @@ As convention, the ID of the element is used in script while the class is used f
       });
     }
 
-    /*setTimeout(function() {
+    setTimeout(function() {
       refreshMap();
-    }, 500);*/
+    }, 500);
   }
 
   /*
