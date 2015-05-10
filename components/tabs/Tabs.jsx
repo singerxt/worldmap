@@ -4,13 +4,21 @@ var Tabs = React.createClass({
       <div className="tabs">
         <ul className="control">
           {this.props.components.map(function(component, i) {
-            return (<li><button>tab</button></li>);
+            return (
+              <li className={component.props.handle} key={i}>
+                <button>{component.props.title}</button>
+              </li>
+            );
           })}
         </ul>
 
         <ul className="pages">
           {this.props.components.map(function(component, i) {
-            return (<li>{component}</li>);
+            return (
+              <li className={component.props.handle} key={i}>
+                {component}
+              </li>
+            );
           })}
         </ul>
       </div>
