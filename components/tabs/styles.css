@@ -1,0 +1,19 @@
+.tabs .control button {
+  display: inline-block;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  text-align: center;
+  min-width: 100px;
+}
+
+.tabs .control button:hover {
+  background: silver;
+}
+
+.tabs .pages li {
+  display: none;
+}
+
+.tabs .pages > :first-child {
+  display: block;
+}

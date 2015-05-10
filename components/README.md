@@ -6,12 +6,10 @@ Components
     - PageTitle
     - Search
     - Navigation
-  - Aside
-    - Tabs *
-      - ToogleOptions *
-      - Filters *
-  - Article
+  - Accordeon
+    - ToogleOptions *
+    - Filters *
+  - Tabs
     - GoogleMaps *
+    - CommonPAge *
   - ButtonToggle
-
-* Uncoplete. Need more work.

@@ -9,6 +9,8 @@ var Panels = React.createClass({
           var components = null;
           if (panel.components && panel.mode === 'tabs') {
             components = <Tabs components={panel.components} />;
+          } else if (panel.components && panel.mode === 'accordeon') {
+            components = <Accordeon components={panel.components} />;
           } else {
             components = panel.components;
           }
