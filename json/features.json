@@ -2,53 +2,6 @@
   "type": "FeatureCollection",
   "features": [
     {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [-115, 60],
-            [-50, 80],
-            [95, 0],
-            [-50, -80],
-            [-115, -60],
-            [-35, 0],
-            [-115, 60]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [105, 80],
-            [170, 60],
-            [105, 10],
-            [40, 60],
-            [105, 80]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [105, -80],
-            [170, -60],
-            [105, -10],
-            [40, -60],
-            [105, -80]
-          ]
-        ]
-      }
-    },
-    {
       "properties": {
         "name": "Bernardo Dias",
         "description": "The Hammerizer",

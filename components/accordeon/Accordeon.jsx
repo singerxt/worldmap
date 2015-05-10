@@ -1,10 +1,7 @@
 var AccordeonButton = React.createClass({
   toggleAccordeon: function() {
-    [].forEach.call(document.querySelectorAll('.accordeon div.selected'), function(item) {
-      item.classList.remove('selected');
-    });
     [].forEach.call(document.querySelectorAll('.accordeon div.' + this.props.component.props.handle), function(item) {
-      item.classList.add('selected');
+      item.classList.toggle('selected');
     });
   },
   render: function() {
