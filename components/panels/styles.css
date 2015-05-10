@@ -69,12 +69,12 @@
 /* LAYOUT ASIDE OPEN */
 
 #app.aside .panel.aside {
-  width: 300px;
+  width: 500px;
   overflow-y: auto;
 }
 
 #app.aside .panel.article {
-  width: calc(100% - 300px);
+  width: calc(100% - 500px);
 }
 
 /* LAYOUT HEADER OPEN */
