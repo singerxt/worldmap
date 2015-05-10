@@ -8,10 +8,10 @@ var Panels = React.createClass({
           var components = panel.components ? panel.components : null;
 
           return (
-            <section className={panelClass} key={i}>
+            <div className={panelClass} key={i}>
               {components}
               {buttonToggle}
-            </section>
+            </div>
           );
         })}
       </div>

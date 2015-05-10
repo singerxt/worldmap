@@ -9,12 +9,14 @@ var app = document.getElementById('app'),
       {
         content: 'aside',
         info: 'this is the sidebar, here goes filter and toggle options, lists and other map interation features',
-        toggle: true
+        toggle: true,
+        components: [<Aside />]
       },
       {
         content: 'article',
         info: 'here goes the google map',
-        toggle: false
+        toggle: false,
+        components: [<Article />]
       }
     ];
 
