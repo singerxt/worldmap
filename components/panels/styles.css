@@ -1,7 +1,7 @@
 /* PANEL DEFAULT */
 .panel {
   position: absolute;
-  transition: all 0.1s;
+  transition: all 0.15s;
   overflow: hidden;
 }
 

@@ -3,7 +3,8 @@ var app = document.getElementById('app'),
       {
         content: 'header',
         info: 'this is the header, here goes main options, links and user info',
-        toggle: true
+        toggle: true,
+        components: [<PageTitle />, <Search />, <Navigation />]
       },
       {
         content: 'aside',

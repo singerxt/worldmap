@@ -1,0 +1,17 @@
+.navigation {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  padding: 0 10px;
+  display: inline-block;
+  text-decoration: underline;
+}
