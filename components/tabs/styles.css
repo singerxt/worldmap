@@ -1,3 +1,4 @@
+/* TAB CONTROL */
 .tabs .control button {
   display: inline-block;
   padding: 0.5em 2em;
@@ -10,10 +11,21 @@
   background: silver;
 }
 
+/* TAB CONTROL SELECTED */
+
+.tabs .control li.selected button {
+  background: silver;
+  font-weight: bold;
+}
+
+/* TAB PAGE */
+
 .tabs .pages li {
   display: none;
 }
 
-.tabs .pages > :first-child {
+/* TAB PAGE SELECTED */
+
+.tabs .pages li.selected {
   display: block;
 }

@@ -1,3 +1,5 @@
+/* ACCORDEON BUTTON */
+
 .accordeon dt button {
   display: inline-block;
   padding: 0.5em 2em;
@@ -8,4 +10,24 @@
 
 .accordeon dt button:hover {
   background: silver;
+}
+
+
+/* ACCORDEON BUTTON SELECTED */
+
+.accordeon .selected dt button {
+  background: silver;
+  font-weight: bold;
+}
+
+/* ACCORDEON PAGE */
+
+.accordeon dd {
+  display: none;
+}
+
+/* ACCORDEON PAGE SELECTED */
+
+.accordeon .selected dd {
+  display: block;
 }
