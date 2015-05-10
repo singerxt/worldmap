@@ -4,8 +4,14 @@ var Panels = React.createClass({
       <div className="panels">
         {this.props.structure.map(function(panel, i) {
           var buttonToggle = panel.toggle ? <ButtonToggle panel={panel} /> : null;
-          var panelClass = "panel " + panel.content;
-          var components = panel.components ? panel.components : null;
+          var panelClass = 'panel ' + panel.content + ' ' + panel.mode;
+
+          var components = null;
+          if (panel.components && panel.mode === 'tabs') {
+            components = <Tabs components={panel.components} />;
+          } else {
+            components = panel.components;
+          }
 
           return (
             <div className={panelClass} key={i}>
