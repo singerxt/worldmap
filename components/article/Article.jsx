@@ -18,7 +18,7 @@ var Article = React.createClass({
 '    - ToogleOptions *',
 '    - Filters *',
 '  - Tabs',
-'    - GoogleMaps *',
+'    - GoogleMaps',
 '    - CommonPage *',
 '  - ButtonToggle',
 '',
@@ -50,11 +50,9 @@ var Article = React.createClass({
 
     return (
       <article>
-        <div id="mapcanvas" className="mapcanvas">
         <pre>
           {status}
         </pre>
-        </div>
       </article>
     );
   }

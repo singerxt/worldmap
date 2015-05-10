@@ -3,7 +3,7 @@ var app = document.getElementById('app'),
       {
         content: 'header',
         toggle: true,
-        mode: null,
+        mode: '',
         components: [
           <PageTitle />,
           <Search />,
@@ -25,8 +25,8 @@ var app = document.getElementById('app'),
         toggle: false,
         mode: 'tabs',
         components: [
-          <Article title="sample tab #1" handle="sample-1" />,
           <Article title="sample tab #2" handle="sample-2" />,
+          <GoogleMaps title="Google Maps" handle="mainmap" />,
           <Article title="sample tab #3" handle="sample-3" />,
           <Article title="sample tab #4" handle="sample-4" />,
           <Article title="sample tab #5" handle="sample-5" />,

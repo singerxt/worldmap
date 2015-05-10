@@ -16,15 +16,28 @@ var profiles = {
     },
     {
       "properties": {
-        "name": "Bernardo Dias",
-        "description": "The Hammerizer",
-        "avatar": "img/hammerizer-52x52.png",
-        "stuff": "I can include any kind of information here, strings, numbers, objects and arrays."
+        "name": "Luiz Filho",
+        "description": "Goiânia / Brazil",
+        "avatar": "",
+        "stuff": ""
       },
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-55, -33.5]
+        "coordinates": [-49.2790834,-16.68427]
+      }
+    },
+    {
+      "properties": {
+        "name": "Jedrzej Kurylo",
+        "description": "Warsaw / Poland",
+        "avatar": "",
+        "stuff": ""
+      },
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [21.0611941,52.232938]
       }
     }
   ]

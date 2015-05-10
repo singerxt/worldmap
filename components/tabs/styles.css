@@ -1,3 +1,7 @@
+.tabs {
+  height: 100%;
+}
+
 /* TAB CONTROL */
 .tabs .control button {
   display: inline-block;
@@ -5,6 +9,7 @@
   cursor: pointer;
   text-align: center;
   min-width: 100px;
+  height: 30px;
 }
 
 .tabs .control button:hover {
@@ -20,8 +25,15 @@
 
 /* TAB PAGE */
 
+.tabs .pages {
+  height: calc(100% - 30px);
+  margin: 0;
+  width: 100%;
+}
+
 .tabs .pages li {
   display: none;
+  height: 100%;
 }
 
 /* TAB PAGE SELECTED */
