@@ -1,6 +1,11 @@
 var TabButton = React.createClass({
   toggleTab: function() {
-    console.log('tabs: ' + this.props.component.props.handle);
+    [].forEach.call(document.querySelectorAll('.tabs li.selected'), function(item) {
+      item.classList.remove('selected');
+    });
+    [].forEach.call(document.querySelectorAll('.tabs li.' + this.props.component.props.handle), function(item) {
+      item.classList.add('selected');
+    });
   },
   render: function() {
     return (

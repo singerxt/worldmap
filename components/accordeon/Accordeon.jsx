@@ -1,10 +1,15 @@
-var AccordionButton = React.createClass({
-  toggleTab: function() {
-    console.log('accordeon: ' + this.props.component.props.handle);
+var AccordeonButton = React.createClass({
+  toggleAccordeon: function() {
+    [].forEach.call(document.querySelectorAll('.accordeon div.selected'), function(item) {
+      item.classList.remove('selected');
+    });
+    [].forEach.call(document.querySelectorAll('.accordeon div.' + this.props.component.props.handle), function(item) {
+      item.classList.add('selected');
+    });
   },
   render: function() {
     return (
-      <button onClick={this.toggleTab}>
+      <button onClick={this.toggleAccordeon}>
           {this.props.component.props.title}
       </button>
     );
@@ -29,7 +34,7 @@ var Accordeon = React.createClass({
           return (
             <div className={classSelected} key={i}>
               <dt>
-                <AccordionButton component={component} />
+                <AccordeonButton component={component} />
               </dt>
               <dd>
                 {component}

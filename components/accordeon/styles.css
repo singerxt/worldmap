@@ -23,11 +23,13 @@
 /* ACCORDEON PAGE */
 
 .accordeon dd {
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 
 /* ACCORDEON PAGE SELECTED */
 
 .accordeon .selected dd {
-  display: block;
+  height: auto;
+  max-height: 9999px;
 }
