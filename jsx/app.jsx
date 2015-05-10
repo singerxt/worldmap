@@ -27,7 +27,7 @@ var app = document.getElementById('app'),
         components: [
           <GoogleMaps title="Google Maps" handle="mainmap" />,
           <Article title="sample tab #2" handle="sample-2" />,
-          <Article title="sample tab #3" handle="sample-3" />,
+          <GoogleMaps title="Another Google Maps" handle="notthemainmap" />,
           <Article title="sample tab #4" handle="sample-4" />,
           <Article title="sample tab #5" handle="sample-5" />,
           <Article title="sample tab #6" handle="sample-6" />
