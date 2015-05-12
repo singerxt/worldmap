@@ -35,6 +35,9 @@ var app = document.getElementById('app'),
       }
     ];
 
+// testing inheritance of components. remove or comment this.
+structure[2].components.push(<Accordeon title="testing inheritance of components" handle="more-tabs" components={structure[1].components} />);
+
 React.render(
   <Panels structure={structure} />,
   app
